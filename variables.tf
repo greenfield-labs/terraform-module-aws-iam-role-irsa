@@ -9,6 +9,12 @@ variable "service_account_subjects" {
   type        = list(string)
 }
 
+variable "inline_policy_json" {
+  description = "IAM JSON string to set as an inline role policy"
+  default     = null
+  type        = string
+}
+
 variable "policy_attachments" {
   description = "List of customer managed policy ARN's"
 
